@@ -1,0 +1,39 @@
+[Debian]
+# https://www.debian.org/releases/
+# http://ftp.debian.org/debian/dists/stretch/main/installer-amd64/current/images/netboot/netboot.tar.gz
+11 bullseye
+10 buster
+9 stretch
+8 jessie
+7 wheezy
+
+[Ubuntu]
+# https://wiki.ubuntu.com/Releases
+20.04 Focal Fossa
+19.10 Eoan Ermine
+19.04 Disco Dingo
+18.10 Cosmic Cuttlefish
+18.04 Bionic Beaver
+17.10 Artful Aardvark
+17.04 Zesty Zapus
+16.10 Yakkety Yak
+16.04 Xenial Xerus
+
+[CentOS]
+8 8
+# http://mirror.centos.org/centos/7/os/x86_64/images/pxeboot/
+7 7.7
+# http://mirror.centos.org/centos/6/os/x86_64/images/pxeboot/
+# http://mirror.centos.org/centos/6.10/os/x86_64/images/pxeboot/
+6 6.10
+
+[Fedora]
+29
+20 Heisenbug
+19 Schrödinger's Cat
+18 Spherical Cow
+17 Beefy Miracle
+16 Verne
+
+[Windows]
+# https://docs.microsoft.com/ko-kr/windows/deployment/configure-a-pxe-server-to-load-windows-pe

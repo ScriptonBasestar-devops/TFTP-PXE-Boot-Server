@@ -1,6 +1,6 @@
 default menu.c32
 prompt 0
-timeout 100
+timeout 30
 ONTIMEOUT chainlocal
 
 LABEL local
@@ -18,10 +18,7 @@ LABEL local
 LABEL Debian 10.2.0-amd64
         MENU LABEL Install Debian 10.2.0-amd64 (Buster)
         KERNEL images/debian/10-buster/amd64/linux
-        APPEND vga=788 initrd=images/debian/10-buster/amd64/initrd.gz --quite auto=true layoutcode=pt language-name=English ask_detect=false default_filesystem=ext4 vga=normal ramdisk_size=16432
-        #KERNEL images/debian/buster/amd64/vmlinuz
-        #APPEND initrd=images/debian/buster/amd64/initrd.gz --quite auto=true layoutcode=pt #language-name=English ask_detect=false default_filesystem=ext4 vga=normal #ramdisk_size=16432 url=http://mirror.kakao.com/debian
-        #APPEND vga=788 initrd=debian-installer/amd64/initrd.gz keymap=us locale=en_US interface=auto domain=example.com auto url=http://local.example.com/debian/preseed-all-boot-root-swap.cfg --
+        APPEND vga=788 initrd=images/debian/10-buster/amd64/initrd.gz --quite keymap=us locale=en_US interface=auto domain=polypia.com auto=true layoutcode=pt language-name=English ask_detect=false default_filesystem=ext4 vga=normal ramdisk_size=16432 preseed/file=images/debian/preseed-server.cfg --
 
 LABEL Ubuntu-16.04-Xenial
         MENU LABEL Install Ubuntu 16.04 (Xenial)
